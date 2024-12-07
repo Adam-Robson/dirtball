@@ -36,59 +36,6 @@
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "testing source: vitest",
-      "type": "shell",
-      "command": "vitest",
-      "args": ["--run"],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "problemMatcher": {
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^\\s*\\d+\\)\\s+(.*)\\s+\\((.*):(\\d+):(\\d+)\\)$",
-          "file": 2,
-          "line": 3,
-          "column": 4,
-          "message": 1
-        }
-      },
-      "presentation": {
-        "reveal": "always",
-        "echo": true,
-        "focus": false,
-        "panel": "shared"
-      }
-    },
-
-    {
-      "label": "testing source: jest",
-      "type": "shell",
-      "command": "jest",
-      "args": ["--run"],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "problemMatcher": {
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^\\s*\\d+\\)\\s+(.*)\\s+\\((.*):(\\d+):(\\d+)\\)$",
-          "file": 2,
-          "line": 3,
-          "column": 4,
-          "message": 1
-        }
-      },
-      "presentation": {
-        "reveal": "always",
-        "echo": true,
-        "focus": false,
-        "panel": "shared"
-      }
     }
   ]
 }

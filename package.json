@@ -1,31 +1,23 @@
 {
   "name": "@adam-robson/dirtball",
   "version": "1.0.0",
-  "description": "light-weight library of utility functions for worknig with dates.",
-  "main": "index.js",
+  "description": "Lightweight date utility functions",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "dev": "nodemon --exec tsx src/index.ts",
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "test": "vitest -- --coverage",
-    "lint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adam-robson/dirtball.git"
+    "build": "rm -rf dist && tsc",
+    "test": "vitest",
+    "lint": "eslint",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
   },
   "keywords": [
-    "node",
     "date",
-    "dates",
-    "strings"
+    "utilities",
+    "typescript"
   ],
-  "author": "adam robson",
+  "author": "Your Name",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/adam-robson/dirtball/issues"
-  },
-  "homepage": "https://github.com/adam-robson/dirtball#readme",
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "@types/eslint__js": "^8.42.3",
@@ -40,5 +32,17 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.17.0",
     "vitest": "^2.1.8"
-  }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-robson/dirtball.git",
+    "directory": "src"
+  },
+  "bugs": {
+    "url": "https://github.com/adam-robson/dirtball/issues"
+  },
+  "homepage": "https://github.com/adam-robson/dirtball#readme"
 }
