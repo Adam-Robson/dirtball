@@ -1,0 +1,25 @@
+{
+  "name": "@adam-robson/dirtball",
+  "version": "1.0.0",
+  "description": "light-weight library of utility functions for worknig with dates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-robson/dirtball.git"
+  },
+  "keywords": [
+    "node",
+    "date",
+    "dates",
+    "strings"
+  ],
+  "author": "adam robson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adam-robson/dirtball/issues"
+  },
+  "homepage": "https://github.com/adam-robson/dirtball#readme"
+}
