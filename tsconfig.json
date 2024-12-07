@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "declaration": true,
-    "outDir": "./",
+    "outDir": "./dist",
     "removeComments": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
